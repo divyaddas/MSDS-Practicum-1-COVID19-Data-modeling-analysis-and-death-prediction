@@ -5,12 +5,15 @@
              Project Title: COVID – 19 Data modeling, analysis and death prediction.
 
 We are living in an era where we’re continuously generating the different forms of data throughout the day after the introduction of computers. The technology advancement and adoption of IOT will be making exponential data growth across different business domains. Over the last two years alone 90 percent of the data in the world was generated. As big data expands into AI and machine learning, its scope is very vast and, for any business data analysis is very important because it helps in decision making as well as provides explanation to important concepts and problems. Also we can find solution of various difficult real life problems. Scientists around the world develop algorithms that can help to predict infections based on that data. 
+
 Project Summary:
  	The world is going through a difficult time and fighting with a deadly virus called COVID-19. Coronavirus disease 2019 (COVID-19) is an infectious disease caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2). It was first identified in December 2019 in Wuhan, China, and has resulted in an ongoing pandemic. The first case may be traced back to 17 November 2019.As of 8 June 2020, more than 7.06 million cases have been reported across 188 countries and territories, resulting in more than 403,000 deaths. More than 3.16 million people have recovered. (Wikipedia)
 As a data scientist it’s our duty is to do good for our society, and I believe we can get through it. The objective of the project is to use the COVID-19 data from CSSE at Johns Hopkins University and Our World in Data. Explored and analyzed the data using python, created visualizations. Also build Prophet, SIR, Extended SIR, linear regression and XGBoost model for death prediction.
+
 Data and variables:
 For the analysis and Machine Learning I have used the time series data from CSSE at Johns Hopkins University and Our World in Data. The variables represent all of the main data related to confirmed cases, deaths, and testing, as well as other variables.
 The main independent variables that I’m focusing for this analysis are: total_cases, new_cases, total_deaths, new_deaths, aged_65_older, aged_70_older, gdp_per_capita, diabetes_prevalence, female_smokers, male_smokers, handwashing_facilities, hospital_beds_per_thousand
+
 Data Cleaning Methods:
 	Data preprocessing is the crucial step while creating a machine learning model, and while doing any operation with data, it is mandatory to clean it and put in a formatted way. First of all I have identified the columns that are required for my analysis and selected those columns to clean and further analysis.
 •	Handling null or empty data is important since most of the model doesn’t work well with null data. I have use panda function to handle empty string using fillna(‘’) and null values in float/int columns.
@@ -26,8 +29,10 @@ Created Scatter geo map for displaying the trend over the time and created Trend
 
 Machine Learning Models:
 Created a Linear regression model and fit the model with owid COVID19 data, predicted the world death projection for the next 30 days. In this project I have used sklearn for creating Linear Regression model and created training split with 80 to 20%. The trained the model and predicted the death for next 30 days. Also created model using XGBoost for improving the linear regression model and fit the model with owid COVID19 data, predicted the world death projection for the next 30 days. Created a model and predicted US death projection using the prophet model. Using prophet I have predicted the death for future with date, It also shows a upper and lower limit of y value, The blue line shows the prediction along with its lower and upper bound of the uncertainty interval. Prophet simple and great for predicting different forecast with time series data like covid19 data. Created SIR model, SIR model is one of the simplest compartment model consist of three compartments S for the number of susceptible, I for the number of infectious, and R for the number of recovered or deceased. Created the extended SIR model (SIR Extended Model: This model extended SIR with Exposed, Hospitalized and Dead Compartments).
+
 Results/Conclusions:
 In this project I have used data from multiple sources and  used them to perform EDA and created visualizations. I have created Five Different Machine Learning Models for COVID-19. Then Predicted the death for the world and US. Also Fitted the model with real time data from Ourdworldin.org and john Hopkins. I believe every effort count in this kind of pandemic and we all can get through it.
+
 References:
 https://github.com/CSSEGISandData
  https://ourworldindata.org/coronavirus (https://github.com/owid/covid-19-data/tree/master/public/data)
