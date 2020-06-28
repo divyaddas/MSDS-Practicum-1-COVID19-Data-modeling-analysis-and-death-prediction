@@ -8,7 +8,7 @@ We are living in an era where we’re continuously generating the different form
 
 Project Summary:
 
- 	The world is going through a difficult time and fighting with a deadly virus called COVID-19. Coronavirus disease 2019 (COVID-19) is an infectious disease caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2). It was first identified in December 2019 in Wuhan, China, and has resulted in an ongoing pandemic. The first case may be traced back to 17 November 2019.As of 8 June 2020, more than 7.06 million cases have been reported across 188 countries and territories, resulting in more than 403,000 deaths. More than 3.16 million people have recovered. (Wikipedia)
+ The world is going through a difficult time and fighting with a deadly virus called COVID-19. Coronavirus disease 2019 (COVID-19) is an infectious disease caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2). It was first identified in December 2019 in Wuhan, China, and has resulted in an ongoing pandemic. The first case may be traced back to 17 November 2019.As of 8 June 2020, more than 7.06 million cases have been reported across 188 countries and territories, resulting in more than 403,000 deaths. More than 3.16 million people have recovered. (Wikipedia)
 As a data scientist it’s our duty is to do good for our society, and I believe we can get through it. The objective of the project is to use the COVID-19 data from CSSE at Johns Hopkins University and Our World in Data. Explored and analyzed the data using python, created visualizations. Also build Prophet, SIR, Extended SIR, linear regression and XGBoost model for death prediction.
 
 Data and variables:
@@ -18,7 +18,7 @@ The main independent variables that I’m focusing for this analysis are: total_
 
 Data Cleaning Methods:
 
-	Data preprocessing is the crucial step while creating a machine learning model, and while doing any operation with data, it is mandatory to clean it and put in a formatted way. First of all I have identified the columns that are required for my analysis and selected those columns to clean and further analysis.
+Data preprocessing is the crucial step while creating a machine learning model, and while doing any operation with data, it is mandatory to clean it and put in a formatted way. First of all I have identified the columns that are required for my analysis and selected those columns to clean and further analysis.
 •	Handling null or empty data is important since most of the model doesn’t work well with null data. I have use panda function to handle empty string using fillna(‘’) and null values in float/int columns.
 •	Formatting data  is important avoid errors and improve the readability. Date fields are one of the most common fields which need formatting to ensure it works properly. Also sometime you get float or int as object so need to cast it correct data type. Similarly we need to rename columns to improve the readability.
 •	Aggregation of data one of the common step need to be performed in order to get the summary of data. In our case we need summarize the data by date and country. Also some of the field we need to take mean of the values
